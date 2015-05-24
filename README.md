@@ -2,6 +2,9 @@
 
 A blog starter with a bootstrap theme built with [io.js](http://iojs.org) and [express.js](http://expressjs.com)
 
+If you want to start a blog with node.js (io.js) with few configuration,
+clone this repo, install node.js, run two commands and there you go!
+
 ![Clean Blog](clean-blog.jpg)
 
 ### blog Theme
