@@ -1,0 +1,26 @@
+//- <!-- Page Header -->
+//- <!-- Set your background image for this header on the line below. -->
+header(class="intro-header" style="background-image: url('/images/bg.png')")
+  div(class="container")
+    div(class="row")
+      div(class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1")
+        div(class="site-heading")
+          h1 
+            if post
+              div(style="text-align: left;")
+                = post.title
+            else
+              p sideffects
+              hr(class="small")
+          
+          
+          if post
+            div(class="subheading", style="text-align: left;")
+              = post.preview.replace("<p>", "").replace("</p>", "").replace(/<p(.)*p>/, "").replace(/<a(.)*\">/, "").replace(/<\/a>/, "")
+          else 
+            span(class="subheading") It never goes as expected
+          
+          if post
+            br
+            div.meta(style="text-align: left;")
+              span Posted on #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}

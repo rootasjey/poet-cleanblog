@@ -1,0 +1,14 @@
+#blog {
+  /*background: #eee;*/
+}
+
+.next a {
+    color: black;
+    border-color: rgba(18, 17, 17, 0.15) !important;
+}
+
+#top-header {
+  /*height: 700px;
+  width: 100%;
+  background: url("/images/bg.jpg");*/
+}

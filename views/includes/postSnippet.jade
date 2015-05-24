@@ -1,0 +1,14 @@
+
+div.post-preview
+  a(href=post.url)
+    h2.post-title
+      = post.title
+    h3.post-subtitle
+      = post.preview.replace("<p>", "").replace("</p>", "").replace(/<p(.)*p>/, "").replace(/<a(.)*\">/, "").replace(/<\/a>/, "")
+  p(class="post-meta") Posted by <a href="#">Jérémie CORPINOT</a> on #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+  div.tags
+    - each tag in post.tags
+      a(href=tagUrl(tag))
+        span.label.label-info #{tag}
+
+  hr
