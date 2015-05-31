@@ -8,3 +8,6 @@ block content
       - each tag in post.tags
         a(href=tagUrl(tag))
           span.label.label-info #{tag}
+
+  div.comments
+    include includes/disqus.jade
